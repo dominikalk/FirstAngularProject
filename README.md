@@ -5,8 +5,10 @@ This is the course - https://www.udemy.com/angular-4-front-to-back/ - made by Br
 
 To run the website run these in the CLI:
 
-npm install           #Installs all the dependancies (You must have node package manager installed for this to work)
+npm install           
+#Installs all the dependancies (You must have node package manager installed for this to work)
 
-ng serve --open       #Compiles the code and opens index.html in the browser
+ng serve --open       
+#Compiles the code and opens index.html in the browser
 
 (ctrl + c to end)      
