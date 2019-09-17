@@ -1,3 +1,4 @@
 # FirstAngularProject
-This was my first angular application made with a course on Udemy
+This was my first angular application made with a course on Udemy.
+
 This is the course - https://www.udemy.com/angular-4-front-to-back/ - made by Brad Traversy
