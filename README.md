@@ -7,6 +7,6 @@ To run the website run these in the CLI:
 
 npm install
 
-ng server --open
+ng serve --open
 
 (ctrl + c to end)
