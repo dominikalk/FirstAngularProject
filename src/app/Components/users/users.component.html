@@ -1,7 +1,7 @@
 <button (click)="showUserForm = !showUserForm" class="btn btn-dark mb-3">Add User</button>
 <div class="card card-body mb-3" *ngIf="showUserForm">
     <h2>Add User</h2>
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" autocomplete="off">
         <div class="form-group">
             <label>First Name</label>
             <input 
@@ -13,7 +13,6 @@
             #userFirstName="ngModel"
             required
             minlength="2"
-            autocomplete="off"
             >
             <div [hidden]="!userFirstName.errors?.required" class="invalid-feedback">First Name Required</div>
             <div [hidden]="!userFirstName.errors?.minlength" class="invalid-feedback">Must be at least 2 characters</div>
@@ -29,7 +28,6 @@
             #userlastName="ngModel"
             required
             minlength="2"
-            autocomplete="off"
             >
             <div [hidden]="!userlastName.errors?.required" class="invalid-feedback">Last Name Required</div>
             <div [hidden]="!userlastName.errors?.minlength" class="invalid-feedback">Must be at least 2 characters</div>
@@ -45,7 +43,6 @@
                 #userEmail="ngModel"
                 required
                 pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-                autocomplete="off"
                 >
                 <div [hidden]="!userEmail.errors?.required" class="invalid-feedback">Email Required</div>
                 <div [hidden]="!userEmail.errors?.pattern" class="invalid-feedback">Email is not valid</div>
